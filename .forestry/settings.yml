@@ -7,14 +7,15 @@ sections:
 - type: directory
   path: styles
   label: Styles
-  create: all
+  create: documents
   match: "**/*"
+  new_doc_ext: ".css"
 - type: directory
   path: components
   label: Components
   create: documents
   match: "**/*"
-  new_doc_ext: ".js"
+  new_doc_ext: js
 - type: directory
   path: posts
   label: Posts
@@ -24,7 +25,8 @@ sections:
   path: pages
   label: Pages
   create: all
-  match: "**/*"
+  match: "*/*"
+  new_doc_ext: ".js"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
