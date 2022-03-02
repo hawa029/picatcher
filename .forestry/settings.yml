@@ -12,8 +12,9 @@ sections:
 - type: directory
   path: components
   label: Components
-  create: all
+  create: documents
   match: "**/*"
+  new_doc_ext: ".js"
 - type: directory
   path: posts
   label: Posts
