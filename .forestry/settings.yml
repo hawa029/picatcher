@@ -14,7 +14,7 @@ sections:
   path: components
   label: Components
   create: documents
-  match: "/*"
+  match: "*/*"
   new_doc_ext: js
 - type: directory
   path: posts
