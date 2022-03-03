@@ -9,5 +9,5 @@ fields:
   name: description
   label: description
 - type: text
-  name: date
-  label: date
+  name: prix
+  label: price
