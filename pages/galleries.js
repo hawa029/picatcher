@@ -10,30 +10,30 @@ export default function Galleries() {
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           Galleries de photos
         </h1>
-        <div class="2xl:container 2xl:mx-auto md:py-12 lg:px-20 md:px-6 py-9 px-4">
-          <div class="text-center">
-            <h2 class="font-semibold dark:text-white lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
+        <div className="2xl:container 2xl:mx-auto md:py-12 lg:px-20 md:px-6 py-9 px-4">
+          <div className="text-center">
+            <h2 className="font-semibold dark:text-white lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
               Découvrez quelques photos de séances
             </h2>
-            <p class="font-normal text-base leading-6 dark:text-gray-400 text-gray-600 mt-4 lg:w-10/12 md:w-9/12 mx-auto">
+            <p className="font-normal text-base leading-6 dark:text-gray-400 text-gray-600 mt-4 lg:w-10/12 md:w-9/12 mx-auto">
               Les photos sont classées par catégories. Cliquez sur la catégories
               de votre choix pour y accéder
             </p>
           </div>
-          <div class="grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:grap-8 md:gap-6 gap-4 mt-10">
-            <div class="relative group">
+          <div className="grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:grap-8 md:gap-6 gap-4 mt-10">
+            <div className="relative group">
               <img
                 src="https://i.ibb.co/QHS8Ngp/pexels-alana-sousa-3294250-1.png"
                 alt="A picture of a sitting dog"
-                class="lg:block hidden w-full"
+                className="lg:block hidden w-full"
               />
               <img
                 src="https://i.ibb.co/mNPBgQN/pexels-alana-sousa-3294250-1-1.png"
                 alt="A picture of a sitting dog"
-                class="lg:hidden block w-full"
+                className="lg:hidden block w-full"
               />
-              <div class="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
-              <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
+              <div className="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+              <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
                   width="64"
                   height="64"
@@ -65,19 +65,19 @@ export default function Galleries() {
                 </svg>
               </div>
             </div>
-            <div class="relative group">
+            <div className="relative group">
               <img
                 src="https://i.ibb.co/T8jgRy3/pexels-leah-kelley-1449667-1.png"
                 alt="Smiling Girl"
-                class="lg:block hidden w-full"
+                className="lg:block hidden w-full"
               />
               <img
                 src="https://i.ibb.co/YD8nNMR/pexels-leah-kelley-1449667-1-1.png"
                 alt="Smiling Girl"
-                class="lg:hidden block w-full"
+                className="lg:hidden block w-full"
               />
-              <div class="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
-              <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
+              <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+              <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
                   width="64"
                   height="64"
@@ -109,19 +109,19 @@ export default function Galleries() {
                 </svg>
               </div>
             </div>
-            <div class="relative group">
+            <div className="relative group">
               <img
                 src="https://i.ibb.co/F3dzNWD/pexels-spencer-selover-775358-1.png"
                 alt="Men Posing"
-                class="lg:block hidden w-full"
+                className="lg:block hidden w-full"
               />
               <img
                 src="https://i.ibb.co/myWxfSm/pexels-spencer-selover-775358-1-1.png"
                 alt="Men Posing"
-                class="lg:hidden block w-full"
+                className="lg:hidden block w-full"
               />
-              <div class="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
-              <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
+              <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+              <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
                   width="64"
                   height="64"
@@ -153,19 +153,19 @@ export default function Galleries() {
                 </svg>
               </div>
             </div>
-            <div class="relative group">
+            <div className="relative group">
               <img
                 src="https://i.ibb.co/DwcwgDP/pexels-chevanon-photography-1108099-1.png"
                 alt="2 puppies"
-                class="lg:block hidden w-full"
+                className="lg:block hidden w-full"
               />
               <img
                 src="https://i.ibb.co/5cDQZ2r/pexels-chevanon-photography-1108099-1-1.png"
                 alt="2 puppies"
-                class="lg:hidden block w-full"
+                className="lg:hidden block w-full"
               />
-              <div class="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
-              <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
+              <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+              <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
                   width="64"
                   height="64"
@@ -197,19 +197,19 @@ export default function Galleries() {
                 </svg>
               </div>
             </div>
-            <div class="relative group">
+            <div className="relative group">
               <img
                 src="https://i.ibb.co/F3dzNWD/pexels-spencer-selover-775358-1.png"
                 alt="Men Posing"
-                class="lg:block hidden w-full"
+                className="lg:block hidden w-full"
               />
               <img
                 src="https://i.ibb.co/myWxfSm/pexels-spencer-selover-775358-1-1.png"
                 alt="Men Posing"
-                class="lg:hidden block w-full"
+                className="lg:hidden block w-full"
               />
-              <div class="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
-              <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
+              <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+              <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
                   width="64"
                   height="64"
@@ -241,19 +241,19 @@ export default function Galleries() {
                 </svg>
               </div>
             </div>
-            <div class="relative group">
+            <div className="relative group">
               <img
                 src="https://i.ibb.co/DwcwgDP/pexels-chevanon-photography-1108099-1.png"
                 alt="2 puppies"
-                class="lg:block hidden w-full"
+                className="lg:block hidden w-full"
               />
               <img
                 src="https://i.ibb.co/5cDQZ2r/pexels-chevanon-photography-1108099-1-1.png"
                 alt="2 puppies"
-                class="lg:hidden block w-full"
+                className="lg:hidden block w-full"
               />
-              <div class="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
-              <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
+              <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
+              <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
                   width="64"
                   height="64"

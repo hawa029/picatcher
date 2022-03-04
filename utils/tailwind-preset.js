@@ -65,7 +65,7 @@ module.exports = {
           dark: {
             css: {
               color: theme('colors.gray.300'),
-              '[class~="lead"]': { color: theme('colors.gray.400') },
+              '[className~="lead"]': { color: theme('colors.gray.400') },
               a: { color: theme('colors.gray.100') },
               strong: { color: theme('colors.gray.100') },
               'ul > li::before': { backgroundColor: theme('colors.gray.700') },
