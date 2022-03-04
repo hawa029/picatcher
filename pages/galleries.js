@@ -23,16 +23,21 @@ export default function Galleries() {
           </div>
           <div className="grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:grap-8 md:gap-6 gap-4 mt-10">
             <div className="relative group">
-              <Image
-                src="https://i.ibb.co/QHS8Ngp/pexels-alana-sousa-3294250-1.png"
-                alt="A picture of a sitting dog"
-                className="lg:block hidden w-full"
-              />
-              <Image
-                src="https://i.ibb.co/mNPBgQN/pexels-alana-sousa-3294250-1-1.png"
-                alt="A picture of a sitting dog"
-                className="lg:hidden block w-full"
-              />
+              <>
+                <Image
+                  src="https://i.ibb.co/QHS8Ngp/pexels-alana-sousa-3294250-1.png"
+                  alt="A picture of a sitting dog"
+                  className="lg:block hidden w-full"
+                />
+              </>
+              <>
+                <Image
+                  src="https://i.ibb.co/mNPBgQN/pexels-alana-sousa-3294250-1-1.png"
+                  alt="A picture of a sitting dog"
+                  className="lg:hidden block w-full"
+                />
+              </>
+
               <div className="flex justify-center items-center opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
