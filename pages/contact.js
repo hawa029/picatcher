@@ -1,11 +1,11 @@
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 import Layout, { GradientBackground } from '../components/Layout';
 
 export default function Galleries() {
   return (
     <Layout>
-      <Header />
+      <Navigation />
       <main className="w-full">
         <h1 className="text-3xl lg:text-5xl text-center mb-12">Contact</h1>
         <div className="text-center">
