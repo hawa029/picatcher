@@ -42,44 +42,44 @@ export default function PostPage({
         description={frontMatter.description}
       />
       <Navigation />
-      <article classNameName="px-6 md:px-0">
+      <article className="px-6 md:px-0">
         <header>
-          <h1 classNameName="text-3xl md:text-5xl dark:text-white text-center mb-12">
+          <h1 className="text-3xl md:text-5xl dark:text-white text-center mb-12">
             {frontMatter.title}
           </h1>
           {frontMatter.description && (
-            <p classNameName="text-xl mb-4">{frontMatter.description}</p>
+            <p className="text-xl mb-4">{frontMatter.description}</p>
           )}
         </header>
         <main>
-          <article classNameName="prose dark:prose-dark">
+          <article className="prose dark:prose-dark">
             <MDXRemote {...source} components={components} />
           </article>
         </main>
-        <div classNameName="grid md:grid-cols-2 lg:-mx-24 mt-12">
+        <div className="grid md:grid-cols-2 lg:-mx-24 mt-12">
           {prevPost && (
             <Link href={`/posts/${prevPost.slug}`}>
-              <a classNameName="py-8 px-10 text-center md:text-right first:rounded-t-lg md:first:rounded-tr-none md:first:rounded-l-lg last:rounded-r-lg first last:rounded-b-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 last:border-t md:border-r-0 md:last:border-r md:last:rounded-r-none flex flex-col">
-                <p classNameName="uppercase text-gray-500 mb-4 dark:text-white dark:opacity-60">
+              <a className="py-8 px-10 text-center md:text-right first:rounded-t-lg md:first:rounded-tr-none md:first:rounded-l-lg last:rounded-r-lg first last:rounded-b-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 last:border-t md:border-r-0 md:last:border-r md:last:rounded-r-none flex flex-col">
+                <p className="uppercase text-gray-500 mb-4 dark:text-white dark:opacity-60">
                   Précédent
                 </p>
-                <h4 classNameName="text-2xl text-gray-700 mb-6 dark:text-white">
+                <h4 className="text-2xl text-gray-700 mb-6 dark:text-white">
                   {prevPost.title}
                 </h4>
-                <ArrowIcon classNameName="transform rotate-180 mx-auto md:mr-0 mt-auto" />
+                <ArrowIcon className="transform rotate-180 mx-auto md:mr-0 mt-auto" />
               </a>
             </Link>
           )}
           {nextPost && (
             <Link href={`/posts/${nextPost.slug}`}>
-              <a classNameName="py-8 px-10 text-center md:text-left md:first:rounded-t-lg last:rounded-b-lg first:rounded-l-lg md:last:rounded-bl-none md:last:rounded-r-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-t-0 first:border-t first:rounded-t-lg md:border-t border-b-0 last:border-b flex flex-col">
-                <p classNameName="uppercase text-gray-500 mb-4 dark:text-white dark:opacity-60">
+              <a className="py-8 px-10 text-center md:text-left md:first:rounded-t-lg last:rounded-b-lg first:rounded-l-lg md:last:rounded-bl-none md:last:rounded-r-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-t-0 first:border-t first:rounded-t-lg md:border-t border-b-0 last:border-b flex flex-col">
+                <p className="uppercase text-gray-500 mb-4 dark:text-white dark:opacity-60">
                   Suivant
                 </p>
-                <h4 classNameName="text-2xl text-gray-700 mb-6 dark:text-white">
+                <h4 className="text-2xl text-gray-700 mb-6 dark:text-white">
                   {nextPost.title}
                 </h4>
-                <ArrowIcon classNameName="mt-auto mx-auto md:ml-0" />
+                <ArrowIcon className="mt-auto mx-auto md:ml-0" />
               </a>
             </Link>
           )}
@@ -88,11 +88,11 @@ export default function PostPage({
       <Footer />
       <GradientBackground
         variant="large"
-        classNameName="absolute -top-32 opacity-30 dark:opacity-50"
+        className="absolute -top-32 opacity-30 dark:opacity-50"
       />
       <GradientBackground
         variant="small"
-        classNameName="absolute bottom-0 opacity-20 dark:opacity-10"
+        className="absolute bottom-0 opacity-20 dark:opacity-10"
       />
     </Layout>
   );
