@@ -12,7 +12,7 @@ import Link from 'next/link';
 import ArrowIcon from '../../components/ArrowIcon';
 import CustomLink from '../../components/CustomLink';
 import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Navigation from '../../components/Navigation';
 import Layout, { GradientBackground } from '../../components/Layout';
 import SEO from '../../components/SEO';
 
@@ -41,7 +41,7 @@ export default function PostPage({
         title={`${frontMatter.title} - ${globalData.name}`}
         description={frontMatter.description}
       />
-      <Header name={globalData.name} />
+      <Navigation />
       <article classNameName="px-6 md:px-0">
         <header>
           <h1 classNameName="text-3xl md:text-5xl dark:text-white text-center mb-12">
@@ -61,7 +61,7 @@ export default function PostPage({
             <Link href={`/posts/${prevPost.slug}`}>
               <a classNameName="py-8 px-10 text-center md:text-right first:rounded-t-lg md:first:rounded-tr-none md:first:rounded-l-lg last:rounded-r-lg first last:rounded-b-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 last:border-t md:border-r-0 md:last:border-r md:last:rounded-r-none flex flex-col">
                 <p classNameName="uppercase text-gray-500 mb-4 dark:text-white dark:opacity-60">
-                  Previous
+                  Précédent
                 </p>
                 <h4 classNameName="text-2xl text-gray-700 mb-6 dark:text-white">
                   {prevPost.title}
@@ -74,7 +74,7 @@ export default function PostPage({
             <Link href={`/posts/${nextPost.slug}`}>
               <a classNameName="py-8 px-10 text-center md:text-left md:first:rounded-t-lg last:rounded-b-lg first:rounded-l-lg md:last:rounded-bl-none md:last:rounded-r-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-t-0 first:border-t first:rounded-t-lg md:border-t border-b-0 last:border-b flex flex-col">
                 <p classNameName="uppercase text-gray-500 mb-4 dark:text-white dark:opacity-60">
-                  Next
+                  Suivant
                 </p>
                 <h4 classNameName="text-2xl text-gray-700 mb-6 dark:text-white">
                   {nextPost.title}
@@ -85,7 +85,7 @@ export default function PostPage({
           )}
         </div>
       </article>
-      <Footer copyrightText={globalData.footerText} />
+      <Footer />
       <GradientBackground
         variant="large"
         classNameName="absolute -top-32 opacity-30 dark:opacity-50"
