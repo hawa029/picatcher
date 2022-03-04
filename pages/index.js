@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
 
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+//import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
@@ -12,7 +13,8 @@ export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
-      <Header />
+      <Navigation />
+
       <main className="w-full">
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
