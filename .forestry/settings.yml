@@ -21,6 +21,7 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  new_doc_ext: ".mdx"
 - type: directory
   path: pages
   label: Pages
