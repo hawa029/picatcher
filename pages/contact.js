@@ -17,7 +17,7 @@ export default function Galleries() {
             <div>
               <label
                 className="text-gray-700 dark:text-gray-200"
-                for="emailAddress"
+                htmlFor="emailAddress"
               >
                 Email Address
               </label>
@@ -29,7 +29,10 @@ export default function Galleries() {
             </div>
 
             <div>
-              <label className="text-gray-700 dark:text-gray-200" for="message">
+              <label
+                className="text-gray-700 dark:text-gray-200"
+                htmlFor="message"
+              >
                 Votre message
               </label>
               <textarea

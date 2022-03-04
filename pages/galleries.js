@@ -1,6 +1,7 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
+import Image from 'next/image';
 
 export default function Galleries() {
   return (
@@ -22,12 +23,12 @@ export default function Galleries() {
           </div>
           <div className="grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:grap-8 md:gap-6 gap-4 mt-10">
             <div className="relative group">
-              <img
+              <Image
                 src="https://i.ibb.co/QHS8Ngp/pexels-alana-sousa-3294250-1.png"
                 alt="A picture of a sitting dog"
                 className="lg:block hidden w-full"
               />
-              <img
+              <Image
                 src="https://i.ibb.co/mNPBgQN/pexels-alana-sousa-3294250-1-1.png"
                 alt="A picture of a sitting dog"
                 className="lg:hidden block w-full"
@@ -66,12 +67,12 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
-              <img
+              <Image
                 src="https://i.ibb.co/T8jgRy3/pexels-leah-kelley-1449667-1.png"
                 alt="Smiling Girl"
                 className="lg:block hidden w-full"
               />
-              <img
+              <Image
                 src="https://i.ibb.co/YD8nNMR/pexels-leah-kelley-1449667-1-1.png"
                 alt="Smiling Girl"
                 className="lg:hidden block w-full"
@@ -110,12 +111,12 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
-              <img
+              <Image
                 src="https://i.ibb.co/F3dzNWD/pexels-spencer-selover-775358-1.png"
                 alt="Men Posing"
                 className="lg:block hidden w-full"
               />
-              <img
+              <Image
                 src="https://i.ibb.co/myWxfSm/pexels-spencer-selover-775358-1-1.png"
                 alt="Men Posing"
                 className="lg:hidden block w-full"
@@ -154,12 +155,12 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
-              <img
+              <Image
                 src="https://i.ibb.co/DwcwgDP/pexels-chevanon-photography-1108099-1.png"
                 alt="2 puppies"
                 className="lg:block hidden w-full"
               />
-              <img
+              <Image
                 src="https://i.ibb.co/5cDQZ2r/pexels-chevanon-photography-1108099-1-1.png"
                 alt="2 puppies"
                 className="lg:hidden block w-full"
@@ -198,12 +199,12 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
-              <img
+              <Image
                 src="https://i.ibb.co/F3dzNWD/pexels-spencer-selover-775358-1.png"
                 alt="Men Posing"
                 className="lg:block hidden w-full"
               />
-              <img
+              <Image
                 src="https://i.ibb.co/myWxfSm/pexels-spencer-selover-775358-1-1.png"
                 alt="Men Posing"
                 className="lg:hidden block w-full"
@@ -242,12 +243,12 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
-              <img
+              <Image
                 src="https://i.ibb.co/DwcwgDP/pexels-chevanon-photography-1108099-1.png"
                 alt="2 puppies"
                 className="lg:block hidden w-full"
               />
-              <img
+              <Image
                 src="https://i.ibb.co/5cDQZ2r/pexels-chevanon-photography-1108099-1-1.png"
                 alt="2 puppies"
                 className="lg:hidden block w-full"
