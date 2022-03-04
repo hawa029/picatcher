@@ -1,46 +1,36 @@
-import Link from 'next/link';
+import Image from 'next/image';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
-import Layout, { GradientBackground } from '../components/Layout';
-import SEO from '../components/SEO';
-import Image from 'next/image';
+//import Layout, { GradientBackground } from '../components/Layout';
 
 export default function Index({ posts, globalData }) {
   return (
-    <Layout>
-      <SEO title={globalData.name} description={globalData.blogTitle} />
-      <Navigation />
+    <>
+      <section className=" container mx-auto items-center">
+        <Navigation />
+      </section>
 
-      <main classNameName="w-full">
-      <div className="w-screen h-screen bg-white flex flex-row flex-wrap p-3">
-  <div className="mx-auto w-2/3">
+      <main className="w-full">
+        <Image
+          src="/home-background.jpg"
+          height={800}
+          width={1200}
+          className="h-screen w-screen"
+        />
 
-<div className="rounded-lg shadow-lg bg-gray-600 w-full flex flex-row flex-wrap p-3 antialiased" style={{backgroundImage: url('https://images.unsplash.com/photo-1578836537282-3171d77f8632?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
-  backgroundRepeat: 'no-repat',
-  backgroundSize: 'cover',
-  backgroundBlendMode: 'multiply'}}
-  
->
-  
-  <div className="md:w-2/3 w-full px-3 flex flex-row flex-wrap">
-    <div className="w-full text-right text-gray-700 font-semibold relative pt-3 md:pt-0">
-
-    </div>
-  </div>
-</div>
-
-  </div>
-</div>
+        <h1 className="text-3xl lg:text-5xl text-center mb-12">Bienvenue !</h1>
+        <div className="text-center">
+          <h2 className="font-semibold dark:text-white lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
+            Charles CANTIN vous accompagne dans tous vos projets
+            photographiques.
+          </h2>
+          <p className="font-normal text-base leading-6 dark:text-gray-400 text-gray-600 mt-4 lg:w-10/12 md:w-9/12 mx-auto">
+            Les photos sont classées par catégories. Cliquez sur la catégories
+            de votre choix pour y accéder
+          </p>
+        </div>
       </main>
-      <Footer copyrightText={globalData.footerText} />
-      <GradientBackground
-        variant="large"
-        className="fixed top-20 opacity-40 dark:opacity-60"
-      />
-      <GradientBackground
-        variant="small"
-        className="absolute bottom-0 opacity-20 dark:opacity-10"
-      />
-    </Layout>
+      <Footer />
+    </>
   );
 }

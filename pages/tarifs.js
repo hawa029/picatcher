@@ -1,11 +1,12 @@
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import ArrowIcon from '../components/ArrowIcon';
+import Link from 'next/link';
 import { getGlobalData } from '../utils/global-data';
 import { getPosts } from '../utils/mdx-utils';
 import Layout, { GradientBackground } from '../components/Layout';
 
-export default function Galleries() {
+export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <Navigation />
