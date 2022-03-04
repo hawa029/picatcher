@@ -9,5 +9,6 @@ fields:
   name: description
   label: description
 pages:
+- posts/famille-220-euros.md
 - posts/juste-moi.md
 - posts/pour-deux-195-euros.md
