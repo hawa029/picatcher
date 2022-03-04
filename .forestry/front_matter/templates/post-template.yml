@@ -8,8 +8,5 @@ fields:
 - type: textarea
   name: description
   label: description
-- type: text
-  name: prix
-  label: price
 pages:
 - posts/juste-moi.md
