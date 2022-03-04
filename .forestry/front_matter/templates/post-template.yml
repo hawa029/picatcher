@@ -11,3 +11,5 @@ fields:
 - type: text
   name: prix
   label: price
+pages:
+- posts/juste-moi.md
