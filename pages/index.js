@@ -1,11 +1,9 @@
 import Link from 'next/link';
-import { getPosts } from '../utils/mdx-utils';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import Layout, { GradientBackground } from '../components/Layout';
-import ArrowIcon from '../components/ArrowIcon';
-import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import Image from 'next/image';
 
 export default function Index({ posts, globalData }) {
   return (
@@ -13,38 +11,26 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Navigation />
 
-      <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
-          {globalData.blogTitle}
-        </h1>
-        <ul className="w-full">
-          {posts.map((post) => (
-            <li
-              key={post.filePath}
-              className="md:first:rounded-t-lg md:last:rounded-b-lg backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10 hover:bg-opacity-20 dark:hover:bg-opacity-50 transition border border-gray-800 dark:border-white border-opacity-10 dark:border-opacity-10 border-b-0 last:border-b hover:border-b hovered-sibling:border-t-0"
-            >
-              <Link
-                as={`/posts/${post.filePath.replace(/\.mdx?$/, '')}`}
-                href={`/posts/[slug]`}
-              >
-                <a className="py-6 lg:py-10 px-6 lg:px-16 block focus:outline-none focus:ring-4">
-                  {post.data.date && (
-                    <p className="uppercase mb-3 font-bold opacity-60">
-                      {post.data.date}
-                    </p>
-                  )}
-                  <h2 className="text-2xl md:text-3xl">{post.data.title}</h2>
-                  {post.data.description && (
-                    <p className="mt-3 text-lg opacity-60">
-                      {post.data.description}
-                    </p>
-                  )}
-                  <ArrowIcon className="mt-4" />
-                </a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+      <main classNameName="w-full">
+      <div className="w-screen h-screen bg-white flex flex-row flex-wrap p-3">
+  <div className="mx-auto w-2/3">
+
+<div className="rounded-lg shadow-lg bg-gray-600 w-full flex flex-row flex-wrap p-3 antialiased" style={{backgroundImage: url('https://images.unsplash.com/photo-1578836537282-3171d77f8632?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  backgroundRepeat: 'no-repat',
+  backgroundSize: 'cover',
+  backgroundBlendMode: 'multiply'}}
+  
+>
+  
+  <div className="md:w-2/3 w-full px-3 flex flex-row flex-wrap">
+    <div className="w-full text-right text-gray-700 font-semibold relative pt-3 md:pt-0">
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
       </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
@@ -57,11 +43,4 @@ export default function Index({ posts, globalData }) {
       />
     </Layout>
   );
-}
-
-export function getStaticProps() {
-  const posts = getPosts();
-  const globalData = getGlobalData();
-
-  return { props: { posts, globalData } };
 }
