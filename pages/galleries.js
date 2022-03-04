@@ -72,6 +72,20 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
+              <Image
+                src="https://images.unsplash.com/photo-1519123648360-eeb65861dc66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                alt="couple"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
+              <Image
+                src="/couple.jpg"
+                alt="couple"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
@@ -106,6 +120,20 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
+              <Image
+                src="https://images.unsplash.com/photo-1581952976147-5a2d15560349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                alt="famille"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
+              <Image
+                src="/famille.jpg"
+                alt="famille"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
@@ -140,6 +168,20 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
+              <Image
+                src="https://images.unsplash.com/photo-1532706302136-347336b002ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                alt="grossesse"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
+              <Image
+                src="/grossesse.jpg"
+                alt="grossesse"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
@@ -174,6 +216,20 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
+              <Image
+                src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                alt="mariage"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
+              <Image
+                src="/mariage.jpg"
+                alt="mariage"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
@@ -208,6 +264,20 @@ export default function Galleries() {
               </div>
             </div>
             <div className="relative group">
+              <Image
+                src="https://images.unsplash.com/photo-1566516171511-1c411a59c8ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                alt="baptême"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
+              <Image
+                src="/baptême.jpg"
+                alt="baptême"
+                height={300}
+                width={500}
+                className="lg:block hidden w-full"
+              />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
                 <svg
