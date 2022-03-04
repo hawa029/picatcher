@@ -8,11 +8,16 @@ export default function Galleries() {
       <Header />
       <main className="w-full">
         <h1 className="text-3xl lg:text-5xl text-center mb-12">Contact</h1>
-
-        <section className="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800 mt-20">
-          <h1 className="text-xl font-bold text-white capitalize dark:text-white">
+        <div className="text-center">
+          <h2 className="font-semibold dark:text-white lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
             Formulaire de contact
-          </h1>
+          </h2>
+          <p className="font-normal text-base leading-6 dark:text-gray-400 text-gray-600 mt-4 lg:w-10/12 md:w-9/12 mx-auto">
+            Pour mieux échnager au sujet de vos projets photos, veuillez
+            utiliser ce formulaire pour me contacter.
+          </p>
+        </div>
+        <section className="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800 mt-20">
           <form>
             <div>
               <label
