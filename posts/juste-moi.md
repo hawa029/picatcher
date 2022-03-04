@@ -1,6 +1,6 @@
 ---
-title: "« Juste moi » "
+title: "« Juste moi » 130 euros"
 description: 'Séance pour une personne, en extérieur ou en studio '
-prix: 130 euros
+prix: ''
 
 ---
