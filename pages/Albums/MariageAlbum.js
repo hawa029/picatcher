@@ -1,5 +1,6 @@
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Navigation';
+import AlbumDropdown from '../../components/AlbumDropdown';
 import Layout, { GradientBackground } from '../../components/Layout';
 import Image from 'next/image';
 
@@ -52,6 +53,9 @@ export default function mariage() {
           </div>
         </div>
       </main>
+      <div className="text-center mx-auto">
+        <AlbumDropdown />
+      </div>
 
       <Footer />
       <GradientBackground

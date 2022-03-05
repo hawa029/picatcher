@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
+import { getGlobalData } from '../utils/global-data';
+import { getPosts } from '../utils/mdx-utils';
 import Layout, { GradientBackground } from '../components/Layout';
 
-export default function Index() {
+export default function Index({ posts, globalData }) {
   return (
     <>
       <Layout>
@@ -14,7 +16,7 @@ export default function Index() {
         src="/home-background.jpg"
         height={800}
         width={1280}
-        className="fixed"
+        className="fixed top-0"
       />
 
       <div className="relative">
@@ -43,7 +45,7 @@ export default function Index() {
         </main>
       </Layout>
 
-      <Footer />
+      <Footer copyrightText={globalData.footerText} />
       <GradientBackground
         variant="large"
         className="fixed top-20 opacity-40 dark:opacity-60"
@@ -54,4 +56,11 @@ export default function Index() {
       />
     </>
   );
+}
+
+export function getStaticProps() {
+  const posts = getPosts();
+  const globalData = getGlobalData();
+
+  return { props: { posts, globalData } };
 }

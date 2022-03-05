@@ -1,10 +1,12 @@
 import Footer from '../components/Footer';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
+import { getGlobalData } from '../utils/global-data';
+import { getPosts } from '../utils/mdx-utils';
 import Layout, { GradientBackground } from '../components/Layout';
 import Image from 'next/image';
 
-export default function Galleries() {
+export default function Galleries({ posts, globalData }) {
   return (
     <Layout>
       <Navigation />
@@ -171,8 +173,7 @@ export default function Galleries() {
           </div>
         </div>
       </main>
-
-      <Footer />
+      <Footer copyrightText={globalData.footerText} />
       <GradientBackground
         variant="large"
         className="fixed top-20 opacity-40 dark:opacity-60"
@@ -183,4 +184,11 @@ export default function Galleries() {
       />
     </Layout>
   );
+}
+
+export function getStaticProps() {
+  const posts = getPosts();
+  const globalData = getGlobalData();
+
+  return { props: { posts, globalData } };
 }
