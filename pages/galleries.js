@@ -1,7 +1,6 @@
 import Footer from '../components/Footer';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
-import BabyAlbum from './Albums/BabyAlbum';
 import Layout, { GradientBackground } from '../components/Layout';
 import Image from 'next/image';
 
@@ -16,11 +15,11 @@ export default function Galleries() {
         <div className="2xl:container 2xl:mx-auto md:py-12 lg:px-20 md:px-6 py-9 px-4">
           <div className="text-center">
             <h2 className="font-semibold dark:text-white lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
-              Découvrez quelques photos de séances
+              Quelques photos de séances
             </h2>
             <p className="font-normal text-base leading-6 dark:text-gray-400 text-gray-600 mt-4 lg:w-10/12 md:w-9/12 mx-auto">
-              Les photos sont classées par catégories. Cliquez sur la catégories
-              de votre choix pour y accéder
+              Les photos sont classées par catégories. Cliquez sur la catégorie
+              de votre choix pour découvrir.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1 lg:grap-8 md:gap-6 gap-4 mt-10">
@@ -66,9 +65,11 @@ export default function Galleries() {
               />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
-                <Link href="/Albums/CoupleAlbum">
-                  <a>Couple</a>
-                </Link>
+                <h2 className="font-semibold dark:text-white text-center lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
+                  <Link href="/Albums/CoupleAlbum">
+                    <a>Couple</a>
+                  </Link>
+                </h2>
               </div>
             </div>
             <div className="relative group">
@@ -88,9 +89,11 @@ export default function Galleries() {
               />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
-                <Link href="/Albums/FamilleAlbum">
-                  <a>Famille</a>
-                </Link>
+                <h2 className="font-semibold dark:text-white text-center lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
+                  <Link href="/Albums/FamilleAlbum">
+                    <a>Famille</a>
+                  </Link>
+                </h2>
               </div>
             </div>
             <div className="relative group">
@@ -110,9 +113,11 @@ export default function Galleries() {
               />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
-                <Link href="/Albums/GrossesseAlbum">
-                  <a>Grossesse</a>
-                </Link>
+                <h2 className="font-semibold dark:text-white text-center lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
+                  <Link href="/Albums/GrossesseAlbum">
+                    <a>Grossesse</a>
+                  </Link>
+                </h2>
               </div>
             </div>
             <div className="relative group">
@@ -132,9 +137,11 @@ export default function Galleries() {
               />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
-                <Link href="/Albums/MariageAlbum">
-                  <a>Mariage</a>
-                </Link>
+                <h2 className="font-semibold dark:text-white text-center lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
+                  <Link href="/Albums/MariageAlbum">
+                    <a>Mariage</a>
+                  </Link>
+                </h2>
               </div>
             </div>
             <div className="relative group">
@@ -154,9 +161,11 @@ export default function Galleries() {
               />
               <div className="opacity-0 bg-gradient-to-t from-gray-800 via-gray-800 to-opacity-30 group-hover:opacity-50 absolute top-0 left-0 h-full w-full"></div>
               <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-0 hover:opacity-100">
-                <Link href="/Albums/BaptêmeAlbum">
-                  <a>Baptême</a>
-                </Link>
+                <h2 className="font-semibold dark:text-white text-center lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800 md:w-full w-9/12 mx-auto">
+                  <Link href="/Albums/BaptemeAlbum">
+                    <a>Baptême</a>
+                  </Link>
+                </h2>
               </div>
             </div>
           </div>
