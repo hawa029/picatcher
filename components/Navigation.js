@@ -6,7 +6,9 @@ export default function Navigation() {
     <>
       <header className=" block bg-gradient-conic pt-10 pb-12">
         <div className=" mx-auto text-center">
-          <Image src="/logo.png" alt="Bébé" height={100} width={100} href="/" />
+          <Link href="/">
+            <Image src="/logo.png" alt="logo" height={100} width={100} />
+          </Link>
         </div>
         <nav className="container mx-auto px-6 py-3">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center sm:block">
