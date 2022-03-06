@@ -11,9 +11,12 @@ A web site using:
 
 ## Application content
 
----
+Le site contient 4 pages:
 
-You can get started with this project in two ways: locally or using the [setup wizard](https://nextjs-wizard.netlify.app/).
+- Accueil
+- Galleries
+- Tarifs et prestations
+- Contact
 
 ### Setting Up Locally
 
@@ -32,12 +35,6 @@ yarn run dev
 ```
 
 Open your browser and visit <http://localhost:3000>, your project should be running!
-
-### Using the Setup Wizard
-
-![Preview of Setup Wizard showing the initial page of a setup form](nextjs-setup-wizard.png)
-
-Through the [setup wizard](https://nextjs-wizard.netlify.app/), you can create your blog in a few clicks and deploy to Netlify.
 
 ## Configuring the blog
 
