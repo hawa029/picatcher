@@ -11,7 +11,7 @@ A web site using:
 
 ## Application content
 
-Le site contient 4 pages:
+This website contains 4 pages:
 
 - Accueil
 - Galleries
