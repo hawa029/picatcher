@@ -3,10 +3,10 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 
 const navigation = [
-  { name: 'Accueil', href: '/', current: true },
-  { name: 'Galleries', href: '/galleries', current: false },
-  { name: 'Tarifs et prestations', href: '/tarifs', current: false },
-  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Accueil', href: '/', current: undefined },
+  { name: 'Galleries', href: '/galleries', current: undefined },
+  { name: 'Tarifs et prestations', href: '/tarifs', current: undefined },
+  { name: 'Contact', href: '/contact', current: undefined },
 ];
 
 function classNames(...classes) {
