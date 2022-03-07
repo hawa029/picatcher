@@ -18,11 +18,11 @@ Le site contient 4 pages:
 - Tarifs et prestations
 - Contact
 
-### Setting Up Locally
+### The origin of the project
 
-If you're doing it locally, start with clicking the [use this template](https://github.com/netlify-templates/nextjs-blog-theme/generate) button on GitHub. This will create a new repository with this template's files on your GitHub account. Once that is done, clone your new repository and navigate to it in your terminal.
+This website was built with this [Template](https://github.com/netlify-templates/nextjs-blog-theme/generate). This will create a new repository with this template's files on this GitHub account. Once that is done, a clone was generated and everything was pulling up in new Terminal.
 
-From there, you can install the project's dependencies by running:
+To start installing the project's dependencies by running:
 
 ```shell
 yarn install
@@ -34,9 +34,9 @@ Finally, you can run your project locally with:
 yarn run dev
 ```
 
-Open your browser and visit <http://localhost:3000>, your project should be running!
+In the browser : <http://localhost:3000>, to see the running project !
 
-## Configuration du site
+## Website configuration
 
 The config is based on environment variables to make it easy to integrate with any Jamstack platform, like Netlify.
 
@@ -50,9 +50,9 @@ Here are the variables you can edit:
 | `BLOG_FONT_HEADINGS` | the font-family for all HTML headings, from `h1` to `h6`| sans-serif (default), serif, monospace|
 | `BLOG_FONT_PARAGRAPHS` | the font-family for all other HTML elements | sans-serif (default), serif, monospace|
 
-All of the env variables can be configured through the [Wizard](https://nextjs-wizard.netlify.app/) or through setting the project's environment variables. You can do this in your Netlify dashaboard (Site settings/Build & deploy/Environment/Environment variables).
+All of the env variables can be configured through the [Wizard](https://nextjs-wizard.netlify.app/) or through setting the project's environment variables. It's also possible in the Netlify dashboard (Site settings/Build & deploy/Environment/Environment variables).
 
-If setting an environment variable isn't your cup of tea, the defaults can be changed in [`utils/global-data.js`](/utils/global-data.js). You can also remove the variables and hard code blog information where these variables are used in the code base.
+The defaults can be changed in [`utils/global-data.js`](/utils/global-data.js). You can also remove the variables and hard code blog information where these variables are used in the code base.
 
 - `BLOG_THEME, BLOG_FONT_HEADINGS, & BLOG_FONT_PARAGRAPHS` are used in [`tailwind-preset.js`](tailwind-preset.js)
 - `BLOG_NAME, BLOG_TITLE, BLOG_FOOTER_TEXT` are used in [`pages/index.js`](pages/index.js) & [`pages/posts/[slug].js`](pages/posts/[slug].js) through the `globalData` object.
