@@ -21,7 +21,12 @@ export default function Galleries({ posts, globalData }) {
             </p>
           </div>
           <section className="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800 mt-20">
-            <form name="contact" method="POST" data-netlify="true">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onSubmit={handleSubmit}
+            >
               <div>
                 <label
                   className="text-gray-700 dark:text-gray-200"
@@ -30,7 +35,6 @@ export default function Galleries({ posts, globalData }) {
                   Email Address
                 </label>
                 <input
-                  id="emailAddress"
                   type="email"
                   name="email"
                   className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
@@ -45,7 +49,6 @@ export default function Galleries({ posts, globalData }) {
                   Votre message
                 </label>
                 <textarea
-                  id="textarea"
                   type="textarea"
                   name="message"
                   rows={6}
@@ -85,3 +88,23 @@ export function getStaticProps() {
 
   return { props: { posts, globalData } };
 }
+
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
+
+const handleSubmit = (event) => {
+  event.prevenDefault();
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: encode({
+      'form-name': event.target.getAttribute('name'),
+      ...id,
+    }),
+  })
+    .then(() => alert('Votre message a bien été envoyée !'))
+    .catch((error) => alert(error));
+};
