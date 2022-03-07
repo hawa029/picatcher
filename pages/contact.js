@@ -21,7 +21,7 @@ export default function Galleries({ posts, globalData }) {
             </p>
           </div>
           <section className="max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800 mt-20">
-            <form>
+            <form name="contact" method="POST" data-netlify="true">
               <div>
                 <label
                   className="text-gray-700 dark:text-gray-200"
