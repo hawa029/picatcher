@@ -12,17 +12,18 @@ export default function Index({ posts, globalData }) {
         style={{
           backgroundImage: "url('/home-background.jpg')",
           backgroundSize: 'cover',
-          height: '100%',
+          height: 700,
           width: '100%',
         }}
       >
+        {' '}
         <Header />
         <Layout>
-          <h1 className="text-2xl lg:text-4xl font-semibold leading-9 text-dark lg:pt-20 lg:pb-20">
+          <h1 className="text-2xl lg:text-4xl font-semibold leading-7 text-dark pt-20 pb-20">
             Charles CANTIN - Photographe
           </h1>
         </Layout>
-        <p className=" text-sm text-dark  text-center pb-20">
+        <p className=" text-sm text-dark  text-center">
           Charles CANTIN © 2022 - Tous droits réservés
         </p>
       </div>
