@@ -1,6 +1,5 @@
 import { getGlobalData } from '../utils/global-data';
 import { getPosts } from '../utils/mdx-utils';
-import Layout from '../components/Layout';
 import Header from '../components/Header';
 
 export default function Index({ posts, globalData }) {
@@ -22,9 +21,11 @@ export default function Index({ posts, globalData }) {
             Charles CANTIN - Photographe
           </h1>
         </div>
-        <p className=" text-sm text-dark  text-center pt-20">
-          Charles CANTIN © 2022 - Tous droits réservés
-        </p>
+        <div className=" text-center mx-auto pt-20 pb-12">
+          <p className=" text-sm text-dark  text-center pt-20">
+            © 2022 - Tous droits réservés
+          </p>
+        </div>
       </div>
     </main>
   );
