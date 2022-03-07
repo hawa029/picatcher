@@ -8,10 +8,3 @@ fields:
 - type: textarea
   name: description
   label: description
-pages:
-- posts/famille-220-euros.md
-- posts/il-etait-une-fois-160-euros.md
-- posts/j-immortalise-l-evenement-sur-mesure.md
-- posts/juste-moi.md
-- posts/mon-bebe-100-euros.md
-- posts/pour-deux-195-euros.md
