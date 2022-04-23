@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
+import Link from 'next/link';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -29,7 +30,7 @@ export default function AlbumDropdown() {
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
+                <Link
                   href="/Albums/BabyAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -37,12 +38,12 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Bébé
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
+                <Link
                   href="/Albums/FamilleAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -50,12 +51,12 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Famille
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
+                <Link
                   href="/Albums/CoupleAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -63,13 +64,13 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Couple
-                </a>
+                </Link>
               )}
             </Menu.Item>
 
             <Menu.Item>
               {({ active }) => (
-                <a
+                <Link
                   href="/Albums/GrossesseAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -77,12 +78,12 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Grossesse
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
+                <Link
                   href="/Albums/BaptemeAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -90,12 +91,12 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Baptême
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
+                <Link
                   href="/Albums/MariageAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -103,7 +104,7 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Mariage
-                </a>
+                </Link>
               )}
             </Menu.Item>
           </div>
