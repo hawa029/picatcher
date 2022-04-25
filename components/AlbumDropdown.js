@@ -30,7 +30,7 @@ export default function AlbumDropdown() {
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <Link
+                <a
                   href="/Albums/BabyAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -38,12 +38,12 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Bébé
-                </Link>
+                </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link
+                <a
                   href="/Albums/FamilleAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -51,12 +51,12 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Famille
-                </Link>
+                </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link
+                <a
                   href="/Albums/CoupleAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -64,13 +64,13 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Couple
-                </Link>
+                </a>
               )}
             </Menu.Item>
 
             <Menu.Item>
               {({ active }) => (
-                <Link
+                <a
                   href="/Albums/GrossesseAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -78,12 +78,12 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Grossesse
-                </Link>
+                </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link
+                <a
                   href="/Albums/BaptemeAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -91,12 +91,12 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Baptême
-                </Link>
+                </a>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link
+                <a
                   href="/Albums/MariageAlbum"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -104,7 +104,7 @@ export default function AlbumDropdown() {
                   )}
                 >
                   Mariage
-                </Link>
+                </a>
               )}
             </Menu.Item>
           </div>
