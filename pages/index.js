@@ -1,8 +1,6 @@
-import { getGlobalData } from '../utils/global-data';
-import { getPosts } from '../utils/mdx-utils';
 import Header from '../components/Header';
 
-export default function Index({ posts, globalData }) {
+export default function Index() {
   return (
     <main>
       <div
@@ -29,11 +27,4 @@ export default function Index({ posts, globalData }) {
       </div>
     </main>
   );
-}
-
-export function getStaticProps() {
-  const posts = getPosts();
-  const globalData = getGlobalData();
-
-  return { props: { posts, globalData } };
 }

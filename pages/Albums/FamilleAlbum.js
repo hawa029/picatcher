@@ -4,7 +4,7 @@ import AlbumDropdown from '../../components/AlbumDropdown';
 import Layout, { GradientBackground } from '../../components/Layout';
 import Image from 'next/image';
 
-export default function famille() {
+export default function FamilleAlbum() {
   return (
     <>
       <Header />

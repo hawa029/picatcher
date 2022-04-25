@@ -4,7 +4,7 @@ import AlbumDropdown from '../../components/AlbumDropdown';
 import Layout, { GradientBackground } from '../../components/Layout';
 import Image from 'next/image';
 
-export default function mariage() {
+export default function MariageAlbum() {
   return (
     <>
       <Header />

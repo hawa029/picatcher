@@ -6,7 +6,7 @@ import { getPosts } from '../utils/mdx-utils';
 import Layout, { GradientBackground } from '../components/Layout';
 import Image from 'next/image';
 
-export default function Galleries({ posts, globalData }) {
+export default function Galleries({ globalData }) {
   return (
     <>
       <Header />

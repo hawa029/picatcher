@@ -4,7 +4,7 @@ import { getGlobalData } from '../utils/global-data';
 import { getPosts } from '../utils/mdx-utils';
 import Layout, { GradientBackground } from '../components/Layout';
 
-export default function Galleries({ posts, globalData }) {
+export default function Galleries({ globalData }) {
   return (
     <>
       <Header />
